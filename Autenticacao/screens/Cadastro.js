@@ -69,70 +69,82 @@ return (
     </View>
 );
 }
-const styles = StyleSheet.create({ container: {
-flex: 1,
-backgroundColor: '#f5f5f5', 
-alignItems: 'center', 
-justifyContent: 'center', 
-paddingHorizontal: 20,
-},
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#eef2f6',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 16,
+    },
 
-cadBox: {
-    width: '100%',
-    maxWidth: 360, 
-    backgroundColor: '#ffffff', 
-    padding: 24,
-    borderRadius: 16, 
-    alignItems: 'center', 
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 }, 
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
-    elevation: 3,
-},
+    cadBox: {
+        width: '92%',
+        maxWidth: 380,
+        backgroundColor: '#fff',
+        paddingHorizontal: 22,
+        paddingVertical: 28,
+        borderRadius: 12,
+        alignItems: 'stretch',
+        shadowColor: '#333',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.12,
+        shadowRadius: 8,
+        elevation: 5,
+    },
 
-titulo: { fontSize: 20,
-fontWeight: '600',
-color: '#222',
-},
+    titulo: {
+        fontSize: 22,
+        fontWeight: '700',
+        color: '#1f2937',
+        textAlign: 'center',
+        marginBottom: 4,
+    },
 
-inputBox: { width: '100%',
-marginTop: 24,
-marginBottom: 8,
-},
+    inputBox: {
+        width: '100%',
+        marginTop: 18,
+        marginBottom: 10,
+    },
 
-input: {
-width: '100%',
-borderWidth: 1, borderColor: '#ddd', borderRadius: 10,
-paddingVertical: 12,
-paddingHorizontal: 14,
-marginBottom: 14,
-fontSize: 15,
- 
-backgroundColor: '#fafafa',
-},
+    input: {
+        width: '100%',
+        borderWidth: 1,
+        borderColor: '#cbd5e1',
+        borderRadius: 7,
+        paddingHorizontal: 12,
+        paddingVertical: 13,
+        marginBottom: 11,
+        fontSize: 16,
+        backgroundColor: '#f8fafc',
+        color: '#1f2937',
+    },
 
-btnLogin: { 
-    width: '100%',
-    paddingVertical: 14, 
-    backgroundColor: '#42A4F3', 
-    borderRadius: 10, 
-    alignItems: 'center', 
-    marginTop: 8,
-},
+    btnLogin: {
+        width: '100%',
+        backgroundColor: '#1e1f1a',
+        paddingVertical: 13,
+        borderRadius: 7,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 12,
+    },
 
-btnLoginText: { 
-    color: '#fff', 
-    fontWeight: '600',
-    fontSize: 16,
-},
+    btnLoginText: {
+        color: '#ffffff',
+        fontSize: 15,
+        fontWeight: '700',
+    },
 
-footer: { color: '#888',
-fontSize: 14,
-marginTop: 20,
-},
+    footer: {
+        color: '#64748b',
+        fontSize: 13,
+        marginTop: 18,
+        textAlign: 'center',
+    },
 
-spnFooter: { color: '#42A4F3',
-fontWeight: '600',
-},
+    spnFooter: {
+        color: '#f52c4e',
+        fontWeight: '700',
+    },
 });
