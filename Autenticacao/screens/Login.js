@@ -2,7 +2,7 @@ import { useState } from "react";
 import {StyleSheet, Text, View, TextInput, TouchableOpacity, ActivityIndicator, TurboModuleRegistry } from "react-native";
 import { Login } from "../services/AuthService";
 
-export default function App({Navigation}){
+export default function App({navigation}){
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [carregando, setCarregando] = useState(false);
@@ -15,7 +15,7 @@ export default function App({Navigation}){
 
         setCarregando(true);
         try{
-            await login(email, senha);
+            await Login(email, senha);
             navigation.navigate('Home');
         }
         catch(error){
